@@ -3,6 +3,9 @@
 <window>
     <defaultcontrol always="true">9315</defaultcontrol>
     <onload>SetProperty(SkinInitStarted,1,home)</onload>
+	
+	<!-- Danvers Preview Notice -->
+	<onload>RunScript(script.skin.helper.service,action=dialogok,header=[Danvers Preview],message=[Welcome to the Arctic Zephyr: From Ashes Danvers Preview for Krypton. Please remember that this is a work in progress and some features may not be functioning correctly. Please let us know of your experience on the Kodi or Emby forums.])</onload>
     <controls>
         <control type="image" description="Background">
             <include>Dimensions_Fullscreen</include>
@@ -25,6 +28,30 @@
             <aligny>center</aligny>
             <label>Arctic Zephyr: [COLOR=$VAR[ColourHighlight]]From Ashes[/COLOR]</label>
             <font>EpisodeNumber</font>
+            <textcolor>Dark1</textcolor>
+            <animation effect="fade" start="100" end="0" time="500" tween="quadratic">WindowClose</animation>
+            <visible>IsEmpty(Skin.String(StartupPlaylist))</visible>
+        </control>
+        <control type="label">
+            <description>Preview_Loading</description>
+            <width>100%</width>
+            <height>50%</height>
+            <align>center</align>
+            <top>30</top>
+            <label>[COLOR=$VAR[ColourHighlight]]Danvers[/COLOR] Preview (4.0.20-Alpha1)</label>
+            <font>Tiny</font>
+            <textcolor>Dark1</textcolor>
+            <animation effect="fade" start="100" end="0" time="500" tween="quadratic">WindowClose</animation>
+            <visible>IsEmpty(Skin.String(StartupPlaylist))</visible>
+        </control>
+        <control type="label">
+            <description>Preview_Loading2</description>
+            <width>100%</width>
+            <height>50%</height>
+            <align>center</align>
+            <bottom>30</bottom>
+            <label>[COLOR=$VAR[ColourHighlight]]Arctic Zephyr: From Ashes Anniversary Edition[/COLOR] (Kodi Krypton)</label>
+            <font>Tiny</font>
             <textcolor>Dark1</textcolor>
             <animation effect="fade" start="100" end="0" time="500" tween="quadratic">WindowClose</animation>
             <visible>IsEmpty(Skin.String(StartupPlaylist))</visible>
