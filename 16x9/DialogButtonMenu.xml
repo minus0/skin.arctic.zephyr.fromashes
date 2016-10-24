@@ -5,32 +5,87 @@
     <allowoverlay>no</allowoverlay>
     <zorder>10</zorder>
     <controls>
-
         <include>GlobalOverlay</include>
 
         <control type="group">
             <include>Animation.ZoomIn</include>
-            <top>200</top>
+			<top>175</top>
+		    <centerleft>50%</centerleft>
+		    <height>700</height>
+		    <width>600</width>
+			<control type="image">
+			<description>panel background image</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+			    <width>610</width>
+                <height>710</height>
+			    <texture border="5" colordiffuse="Black">common/white.png</texture>
+            </control>
+		    <control type="image">
+			    <description>background image</description>
+			    <posx>10</posx>
+			    <posy>10</posy>
+			    <width>590</width>
+                <height>691</height>
+			    <!--<texture>buttons/dialogbutton-fo.png</texture>
+			    <color>Black</color>-->
+			    <texture border="5" colordiffuse="Panel">buttons/dialoge_inner.png</texture>
+            </control>
+		    <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>610</width>
+                <height>710</height>
+                <texture colordiffuse="Panel" border="16">dialog/frame_Landscape-fo.png</texture>
+            </control>
+            <control type="image">
+			    <description>background image</description>
+			    <posx>11</posx>
+			    <posy>11</posy>
+			    <width>589</width>
+                <height>90</height>
+			    <texture border="5" colordiffuse="Dark4">buttons/dialoge_inner.png</texture>
+            </control>
+			<control type="image">
+                <posx>10</posx>
+                <posy>98</posy>
+                <width>590</width>
+                <height>4</height>
+                <texture colordiffuse="Black" border="25">buttons/dialoge_shadow.png</texture>
+            </control>
+		    <control type="label" id="500">
+                <description>header label</description>
+                <posy>22</posy>
+                <posx>45</posx>
+				<width>500</width>
+                <font>SmallBold</font>
+                <align>center</align>
+				<label>Power Menu</label>
+                <textcolor>$VAR[DialogHeadersTextColour]</textcolor>
+				<!--<textcolor>Black70</textcolor>-->
+            </control>
+
+			<!--<control type="image">
+                <posx>55</posx>
+                <posy>30</posy>
+                <width>70</width>
+                <height>70</height>
+                <texture border="5" colordiffuse="Black">common/white.png</texture>
+                <aspectratio align="center" aligny="bottom">keep</aspectratio>
+            </control>-->
+			<control type="image">
+                <posx>40</posx>
+                <posy>8</posy>
+                <width>100</width>
+                <height>100</height>
+                <texture>special://skin/extras/icons/power.png</texture>
+                <aspectratio align="center" aligny="bottom">keep</aspectratio>
+            </control>
+
+            <!--<top>200</top>
             <centerleft>50%</centerleft>
             <width>466</width>
-            <control type="group">
-                <control type="image">
-                    <description>arrow image</description>
-                    <centerleft>50%</centerleft>
-                    <posy>-32</posy>
-                    <width>16</width>
-                    <height>16</height>
-                    <texture colordiffuse="White70" flipy="true">common/arrow-small.png</texture>
-                </control>
-                <control type="image">
-                    <description>arrow image</description>
-                    <centerleft>50%</centerleft>
-                    <posy>576</posy>
-                    <width>16</width>
-                    <height>16</height>
-                    <texture colordiffuse="White70" flipy="false">common/arrow-small.png</texture>
-                </control>
-            </control>
+
             <control type="image">
                 <description>background image</description>
                 <posx>0</posx>
@@ -38,26 +93,48 @@
                 <width>466</width>
                 <height>592</height>
                 <texture border="16" colordiffuse="White100">common/rounded-shadow8.png</texture>
-            </control>
+            </control>-->
 
             <control type="grouplist" id="3110">
                 <description>grouplist for context buttons</description>
-                <posx>18</posx>
-                <posy>0</posy>
-                <width>510</width>
-                <height>560</height>
-                <itemgap>0</itemgap>
-				
-			<control type="button" id="74656">
-                <description>About From Ashes</description>
-				<include>DefContextButton</include>
-				<label>About From Ashes</label>
-                <onclick>ActivateWindow(3115)</onclick>
+                <posx>47</posx>
+                <posy>166</posy>
+                <width>590</width>510
+                <height>455</height>
+                <itemgap>5</itemgap>
+
+			    <control type="button" id="74656">
+                    <description>About From Ashes</description>
+                    <width>510</width>
+					<align>center</align>
+				    <include>DefSkinSettingMenuButton</include>
+				    <label>About From Ashes</label>
+                    <onclick>ActivateWindow(3115)</onclick>
                 </control>
+
+				<control type="button" id="74657">
+					<description>From Ashes Support</description>
+					<width>510</width>
+					<align>center</align>
+					<include>DefSkinSettingMenuButton</include>
+					<label>From Ashes Support</label>
+					<onclick>RunScript(script.skin.helper.service,action=dialogok,header=Arctic Zephyr: From Ashes Support,message=Support for Arctic Zephyr: From Ashes Danvers is available on the Kodi forums and the Emby forums as well as on NortheBridge.com by searching for the keyword)</onclick>
+				</control>
+				
+				<control type="button" id="74658">
+					<description>Danvers Preview Notice 2</description>
+					<width>510</width>
+					<align>center</align>
+					<include>DefSkinSettingMenuButton</include>
+					<label>Danvers Preview</label>
+					<onclick>RunScript(script.skin.helper.service,action=dialogok,header=From Ashes Danvers Preview,message=You are running Danvers Preview Alpha 9. For more information and to get the latest news about AZ:FA visit the Kodi or Emby forums or search for from ashes on NortheBridge.com)</onclick>
+				</control>
 
                 <control type="button" id="3111">
                     <description>Exit XBMC button</description>
-                    <include>DefContextButton</include>
+                    <width>510</width>
+					<align>center</align>
+					<include>DefSkinSettingMenuButton</include>
                     <label>13012</label>
                     <onclick>Quit()</onclick>
                     <visible>System.ShowExitButton</visible>
@@ -65,7 +142,9 @@
 
                 <control type="button" id="3112">
                     <description>Master mode button</description>
-                    <include>DefContextButton</include>
+					<width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>20046</label>
                     <altlabel>20045</altlabel>
                     <onclick>xbmc.mastermode</onclick>
@@ -74,16 +153,20 @@
 
                 <control type="button" id="3113">
                     <description>LogOff Profile</description>
-                    <include>DefContextButton</include>
+					<width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
                     <onclick>dialog.close(all,true)</onclick>
                     <onclick>System.LogOff</onclick>
                     <visible>System.Loggedon + System.HasLoginScreen</visible>
                 </control>
-
+			
                 <control type="button" id="3116">
                     <description>Shutdown</description>
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>13005</label>
                     <onclick>Powerdown()</onclick>
                     <visible>System.CanPowerDown</visible>
@@ -91,7 +174,9 @@
                 
                 <control type="button" id="3114">
                     <description>Custom Shutdown Timer button</description>
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>20151</label>
                     <onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
                     <visible>System.HasAlarm(shutdowntimer)</visible>
@@ -99,7 +184,9 @@
 
                 <control type="button" id="3115">
                     <description>Custom Shutdown Timer button</description>
-                    <include>DefContextButton</include>
+				    <width>510</width>	
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>20150</label>
                     <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
                     <visible>!System.HasAlarm(shutdowntimer)</visible>
@@ -108,7 +195,9 @@
 
                 <control type="label" id="3119">
                     <description>Alarm Time</description>
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <align>center</align>
                     <label>$LOCALIZE[20145] [B]$INFO[System.Alarmpos][/B]</label>
                     <visible>System.HasAlarm(shutdowntimer)</visible>
@@ -116,7 +205,9 @@
 
                 <control type="button" id="3117">
                     <description>Suspend xbmc</description>
-                    <include>DefContextButton</include>
+					<width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>13011</label>
                     <onclick>XBMC.Suspend()</onclick>
                     <visible>System.CanSuspend</visible>
@@ -124,40 +215,69 @@
 
                 <control type="button" id="3118">
                     <description>Reboot button</description>
-                    <include>DefContextButton</include>
+					<width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>13013</label>
                     <onclick>XBMC.Reset()</onclick>
                     <visible>System.CanReboot</visible>
                 </control>
                 
                 <control type="button" id="3121">
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>5</label>
                     <onclick>ActivateWindow(settings)</onclick>
                 </control>
                 
                 <control type="button" id="3122">
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>130</label>
                     <onclick>ActivateWindow(systeminfo)</onclick>
                 </control>
                 
                 <control type="button" id="3123">
-                    <include>DefContextButton</include>
+				    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>10003</label>
                     <onclick>ActivateWindow(filemanager)</onclick>
                 </control>
                 
                 <control type="button" id="3120">
-                    <include>DefContextButton</include>
+                    <width>510</width>
+					<align>center</align>
+                    <include>DefSkinSettingMenuButton</include>
                     <label>31195</label>
                     <onclick>ReloadSkin()</onclick>
-                </control>
-                
+				</control>
+
             </control>
-
-        </control>
-
+            <control type="group">
+                <control type="image">
+                    <description>arrow image</description>
+					<animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
+                    <centerleft>50%</centerleft>
+                    <posy>130</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="Dark2" flipy="true">common/arrow-small.png</texture>
+                </control>
+                <control type="image">
+                    <description>arrow image</description>
+					<animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
+                    <centerleft>50%</centerleft>
+                    <posy>642</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="Dark2" flipy="false">common/arrow-small.png</texture>
+                </control>
+            </control>
+        </control> 
+ 
     </controls>
 
 </window>

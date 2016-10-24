@@ -7,44 +7,71 @@
     <controls>
 
         <control type="group">
-            <visible>!Window.IsVisible(DialogProgress.xml)</visible>
+            <visible>!Window.IsVisible(DialogConfirm.xml)</visible>
 			<visible>!Skin.HasSetting(hide.busydialog)</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <include>GlobalOverlay</include>
-			<include>GlobalOverlay</include>
-
-                <control type="image">
-                <description>Backgrond</description>
-                <centerleft>50%</centerleft>
-                <centertop>47%</centertop>
-                <width>100</width>
-                <height>100</height>
-<!--Changed-->  <texture border="16" colordiffuse="$VAR[SpinnerBackgroundColour]">dialog/loading-back.png</texture>
-                <aspectratio>keep</aspectratio>
+<!-- Modification to Busy Spinner --->			
+			<include>GlobalSpinnerOverlay</include>
+            <!--<include>GlobalOverlay</include>-->
+                <!--<control type="image">
+                    <posx>555</posx>
+		            <posy>450</posy>430
+		            <width>810</width>
+		            <height>250</height>
+                    <texture border="12" colordiffuse="Panel">buttons/dialoge_inner.png</texture>
                 </control>
-
+				<control type="image">
+                    <posx>585</posx>
+                    <posy>480</posy>460
+                    <width>750</width>
+                    <height>190</height>
+                    <texture colordiffuse="Grey" border="25">buttons/dialoge_shadow.png</texture>
+                </control>
+				<control type="image">
+                    <posx>590</posx>
+		            <top>485</top>
+		            <width>740</width>
+		            <height>180</height>
+                    <texture colordiffuse="Black" border="5">common/white.png</texture>
+                </control>
                 <control type="image">
-                <description>Busy animation</description>
-                <centerleft>50%</centerleft>
-                <centertop>47%</centertop>
-                <width>100</width>
-                <height>100</height>
-                <animation effect="rotate" condition="true" start="0" end="360" loop="true" time="1000" center="auto">Conditional</animation>
-<!--Changed-->  <texture colordiffuse="$VAR[SpinnerHighlight]" fallback="special://skin/extras/spinners/flower.gif">dialog/loading-spinner.png</texture>
-                <aspectratio>keep</aspectratio>
+                    <description>Backgrond</description>
+                    <!--<centerleft>50%</centerleft>
+                    <centertop>47%</centertop>
+					<posx>590</posx>
+					<posy>500</posy>
+                    <width>145</width>
+                    <height>145</height>
+                    <texture border="16" colordiffuse="Dark1">dialog/loading-back.png</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>-->
+
+                <control type="multiimage">
+                    <description>Busy animation</description>
+					<posx>740</posx>
+					<posy>500</posy>
+                    <width>150</width>
+                    <height>150</height>
+                    <animation effect="rotate" condition="true" start="0" end="360" loop="true" time="1000" center="auto">Conditional</animation>
+					<imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexturePath)]</imagepath>
+					<timeperimage>100</timeperimage>
+                    <colordiffuse>$VAR[SpinnerHighlight]</colordiffuse>
+					<fadetime>0</fadetime>
+                    <aspectratio>keep</aspectratio>
+					<visible>!Skin.String(SkinHelper.SpinnerTexturePath,None)</visible>
                 </control>
 
                 <control type="label">
-                <description>Busy label</description>
-                <centerleft>50%</centerleft>
-                <centertop>53%</centertop>
-                <width>720</width>
-                <height>108</height>
-                <aligny>center</aligny>
-                <align>center</align>
-                <label>$LOCALIZE[20186]...</label>
-                <textcolor>ffededed</textcolor>
+                   <description>Busy label</description>
+                   <posx>750</posx>
+                   <posy>490</posy>
+                   <width>520</width>
+                   <height>170</height>
+                   <aligny>center</aligny>
+                   <align>center</align>
+                   <label>$LOCALIZE[20186]...</label>
+                   <textcolor>ffededed</textcolor>
                 </control>
 
             </control>

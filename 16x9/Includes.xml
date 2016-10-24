@@ -21,6 +21,8 @@
 	<include file="View_514_PosterShift.xml" />
 	<include file="View_513_PosterRow.xml" />
 	<include file="View_515_Netflix.xml" />
+	<include file="View_520_Gallery.xml" />
+	
 	<include file="Includes_Furniture.xml" />
 	<include file="Includes_Home.xml" />
 	<include file="Includes_GlobalSearch.xml" />
@@ -42,6 +44,14 @@
 		<label>-</label>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>-</texturefocus>
+	</include>
+	
+<!-- Added for New Busy Spinner Background Overlay -->	
+	<include name="Dimensions_Spinner_Halfscreen">
+		<posx>0</posx>
+		<top>360</top>
+		<width>1920</width>
+		<height>440</height>
 	</include>
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
@@ -81,13 +91,36 @@
 		<shadowcolor>Black</shadowcolor>
 		<align>right</align>
 	</include>
+	
+<!--- Modification Addition-----Skin Settings----------------------------------->	
+	<include name="SkinSettingsTopBar">
+	    <control type="image">
+			<include>Animation.FadeIn</include>
+			<!--<left>72</left>
+			<right>72</right>-->
+			<top>0</top>
+			<height>100</height>
+		    <width>100%</width>
+		    <texture border="1" colordiffuse="Panel">common/white.png</texture>				
+	    </control>
+	</include>	
+	
+<!-- Added for new Busy Spinner Background Overlay -->	
+	<include name="GlobalSpinnerOverlay">
+		<control type="image">
+			<include>Animation.FadeIn</include>
+			<include condition="!Window.IsVisible(DialogBusy.xml)">Animation.FadeOut</include>
+			<include>Dimensions_Spinner_Halfscreen</include>
+			<texture colordiffuse="EEBDBDBD">diffuseoverlay.png</texture>
+		</control>
+	</include>	
 	<include name="GlobalOverlay">
 		<control type="image">
 			<include>Animation.FadeIn</include>
 			<include condition="!Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeOut</include>
 			<include>Dimensions_Fullscreen</include>
 			<texture border="2">common/black-back.png</texture>
-		</control>
+		</control>	
 	</include>
 	<variable name="GlobalFanart">
 		<value condition="Window.IsActive(script-globalsearch-infodialog.xml) | Window.IsActive(script-globalsearch-main.xml)">$VAR[GlobalSearchArtInfo]</value>
@@ -131,7 +164,7 @@
 		<control type="group">
 			<visible>Player.HasAudio + Skin.HasSetting(global.showvisualisation)</visible>
 			<control type="visualisation">
-				<visible>Skin.HasSetting(ArtistSlideShow.Disabled) | !System.HasAddon(script.artistslideshow) | Skin.HasSetting(OSDVisualisation.ShowFanart)</visible>
+				<visible>!String.IsEqual(Skin.String(musicvis.background),artistslideshow) | !System.HasAddon(script.artistslideshow) | Skin.HasSetting(OSDVisualisation.ShowFanart)</visible>
 				<description>visualisation</description>
 				<include>Dimensions_Fullscreen</include>
 			</control>
@@ -143,7 +176,7 @@
 				<fadetime>600</fadetime>
 				<loop>yes</loop>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>System.HasAddon(script.artistslideshow) + !Skin.HasSetting(ArtistSlideShow.Disabled)</visible>
+				<visible>System.HasAddon(script.artistslideshow) + String.IsEqual(Skin.String(musicvis.background),artistslideshow)</visible>
 				<animation effect="fade" start="100" end="65" time="0" condition="Skin.HasSetting(OSDVisualisation.ShowFanart)">Conditional</animation>
 				<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
 				<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
@@ -1480,4 +1513,5 @@
 			<texture>$INFO[Window.Property(movie.SubtitleLanguage.12),flags/language/,.png]</texture>
 		</control>
 	</include>
+		
 </includes>

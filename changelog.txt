@@ -1,5 +1,212 @@
 [B]Arctic Zephyr: From Ashes Changelog[/B]
 
+[B]Arctic Zephyr: From Ashes Danvers "Beta 1 Preview Update" - Released September 28, 2016[/B]
+Danvers: 4.9.90-beta1 (4.2.90-beta1_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Cumulative Update Rollup for Arctic Zephyr: From Ashes Danvers Alpha 9 Preview
+General Bug Fixes
+2 User Requested Enhancements to the User Experience
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 9 Preview Update" - Released September 24, 2016[/B]
+Danvers: 4.9.90-alpha9 (4.2.90-alpha9_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Emby Comptability Improvements
+General Stability Enhancements for Beta Release
+Danvers Alpha 9 Textures Package
+Resolved Issues With Fonts
+Music Hub Implemented (Based on AZ:Braz)
+Music OSD Controls Now Available on Submenus
+Added some of "Braz's visualizations for Music." (Selectable in Settings)
+Changed How "script.cu-lrclyrics" Visualization Displays. (NOTICE: Must be installed to function. AZ:FA WILL REQUIRE THIS ADDON IN BETA 1)
+Updated all Playlist and Playlist Editors
+Changed the Graphic Equalizer in the Notification Area
+Made Equalizer Smaller to fit AZ:FA Design
+Changed the "playring.png" Texture to Now Reflect "ColourHighlight" Selection
+Added in "Playlist" Folder Braz's "albumwall.xsp" That is Selectable in Settings as a Background Visualization.
+More Design Fixes and Additions
+Added "Icons" view in "AddonBrowser"
+Made "Hubs" Now Fit Design Scheme.
+Made "script.skinshortcuts" More In Line with Design Scheme
+Changed Main and Sub Headings in Settings to Smaller font and now Centered. 
+Fixed Hub Widget Border not Working for Color Selection
+Updated Dialogs to Alpha 9
+
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 8 Cumulative Preview Update" - Released September 9, 2016[/B]
+Danvers: 4.9.90-alpha8 (4.2.90-alpha8_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Cumulative Update to Alpha 7 Preview Update to Fix Critical Kodi Crash Issue
+Updated the User Experience to the Danvers Font Family ("Segoe," a modern version of the fonts from AZ:E)
+Unused Fonts Moved to "_AZEChunk" for removal at AZ:FA Danvers Release (this has caused a slight increase in size)
+Dialog Windows Have Been Updated with Significant Changes
+A Toggle Switch is now Available for the Keyboard at Skin Settings > Extras (Option to Turn On/Off Autocompletion)
+Addon Browser Info Now Displays Screenshots of an Addon if Available
+Toggle Buttons Have Been Added to the Addon Browser Window for News/Info
+The Color Selector Has Been Widened to Provide More Options On-Screen at Once
+Scrollbar for the Color Selector Has Been Moved from the Left to the Right
+The Addon Browser Now Supports "Big List" and "Thumbnail" View Types
+Header Design On All Dialogs Changed Removing the Outline Box In Favor of the Color Fill Box
+Settings Has Been Redesigned and Now Have Selectable Icons
+Settings Categories Have Text Headings for Better Grouping as well as Seperators
+System Info Window Large Icons Reverted In Favor of Large Text Boxes
+New Settings Textures Have Been Added to the "/extra/icons2" path
+Additions to "strings.po" for New Labels
+Version Branch Change from 4.2.20 to 4.9.90.
+Fixed New Dialogs Added to the Power Menu
+Updated the Danvers Preview Notification
+Miscellaenous Bug Fixes and Enhancements
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 7 Preview Update" - Released September 7, 2016[/B]
+Danvers: 4.9.90-alpha7 (4.2.90-alpha7_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+This Release Was Suspended from Distribution due to Critical Issues. See the "Alpha 8 Cumulative Preview Update" for more information.
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 6 Preview Update" - Released August 27, 2016[/B]
+Danvers: 4.2.20-alpha6 (4.2.20-alpha6_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Updated the From Ashes Preview Startup Message
+Updated the Power Menu Selections to Include "From Ashes Support" and "Danvers Preview" options
+Resolved Color Selection Issues from the Alpha 4 Preview Update
+General Fixes to Dialogs
+General Fixes to Dialog Functionality
+Restored Ability to Select Between Various View Types
+Added the Autocompletion Keyboard as a Required Addon
+General Updates and Fixes
+Updated Textures
+
+THIS RELEASE HAS UNDERGONE GENERAL STABILITY TESTING FOR THE ARCTIC ZEPHYR: FROM ASHES DANVERS PREVIEW (BETA) PHASE. THE ALPHA 7 RELEASE WILL BE
+THE FINAL ALPHA FOR THE DANVERS PREVIEW. THIS VERSION WAS TESTED AGAINST THE LAST KODI KRYPTON ALPHA AND MAY CONTAIN BUGS IN KODI KRYPTON BETA.
+EMBY INTEGRATED FUNCTIONALITY WILL BE RESTORED DURING THE KODI KRYPTON BETA AS EMBY IS UPDATED TO FULLY SUPPORT KODI KRYPTON.
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 4 Preview Update" - Released August 21, 2016[/B]
+Danvers: 4.2.20-alpha4 (4.2.20-alpha4_danvers)
+
+THIS IS A CUMULATIVE UPDATE TO ARCTIC ZEPHYR: FROM ASHES DANVERS PREVIEW (ALPHA 3). Cumaltive Updates contain all the fixes from the release
+it directly supersedes plus any required fixes to address critical issues from the directly superseded release.
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Resolved Settings Window Not Displaying
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 3 Preview Update" - Released August 21, 2016[/B]
+Danvers: 4.2.20-alpha3 (4.2.20-alpha3_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Updated the From Ashes Danvers Preview Startup Message
+Resolved Issue with Settings Icons not Displaying
+General Fixes to the Addon Browser
+General Fixes to the File Browser
+
+[B]Arctic Zephyr: From Ashes Danvers "Alpha 2 Preview Update" - Released August 3, 2016[/B]
+Danvers: 4.2.20-alpha2 (4.2.20-alpha2_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Fixed Krypton Runtime Issues
+Updated Skin Textures With New Krypton Textures
+Reverted Redefined Contexts for Includes Contexts
+Fixed Startup Splash to Use Kodi's Addon Version Call Rather than "4.0.20"
+Fixed the "Danvers Preview" Prompt to Only Display On Kodi Startup
+Updated "About From Ashes" to label @minus0 as "Co-Author" and updated Plugin Information calls
+
+[B]Arctic Zephyr: From Ashes Danvers "Summer 2016 Update" - Released August 1, 2016[/B]
+Danvers: 4.2.20-alpha1 (4.2.20-alpha1_danvers)
+
+ARCTIC ZEPHYR: FROM ASHES ANNIVERSARY EDITION (CODENAMED "DANVERS") IS PRE-RELEASE SOFTWARE DESIGNED FOR A PRE-RELEASE VERSION OF KODI.
+THERE IS NO GUARNTEE THAT ALL FEATURES WILL WORK. PLEASE LET US KNOW OF ANY ISSUES YOU RUN INTO. THIS SKIN IS NOW AVAILABLE IN THE 
+NORTHEBRIDGE BY DESIGN(R) REPOSITORY, EMBY BETA REPOSITORY, GITHUB, OR VIA DIRECT ZIP FILE DOWNLOAD ONLY.
+
+Initial Krypton Release
+Based on the Dormer 3.2.21 Release
+"About From Ashes" has been updated with new credits which were missing in the "Spring 2016 Update"
+Info Banner Code Has Been Completely Commented Out for Dormer and Danver Releases
+Rotten Tomatoes Has Been Added to the Video Information Screen
+Fixes to Broken Code Lines During 3rd Gen Color Enhancement Implementation
+Danvers ONLY: Adds "DialogConfirm.xml"
+New Textures Have Been Added
+Unused Textures Have Been Removed
+4th Generation Color Enhancer Has Been Added
+Ability to change Dialog Menu Background
+Ability to change Dialog Menu Text
+Ability to change Dialog Disabled Text
+Ability to change Dialog Buttons Highlight
+Ability to change Hubs Menu Highlight
+Ability to change Hubs Text Color Highlight
+Ability to change Hubs Widget Highlight Border
+Ability to change Hubs Widget Sublabel
+Ability to change Side Blade Menu Highlight Color
+Implemented new Busy Spinner into all applicable windows
+Fixed File Browser not displaying Folder and File Icons properly
+Changed "script.toolbox" to "script.skinhelper" for Backup and Restore in Skin Settings.
+Added new Color Themes Category in Skin Settings, With Ability to Create and Manage Custom Themes
+Added Ability to Select Day/Night Themes
+
+[B]Arctic Zephyr: From Ashes "Summer 2016 Update Rollup Patch Level 1 (PL1)" - Released July 17, 2016[/B]
+Dormer: 3.2.21 (3.2.21_dormer) / Danvers: No Danvers Variant
+Resolved Color Selection Issues for 4th Generation Color Enhancer
+Resolve Home Screen Fanart Slideshow Issues Introduced in 3.2.20
+Code for Rebase of Danvers Branch (4.0.20-alpha1)
+
+[B]Arctic Zephyr: From Ashes "Summer 2016 Update" - Released June 18, 2016[/B]
+Dormer: 3.2.20 (3.2.20_dormer) / Danvers: No Danvers Variant
+
+The "Summer 2016 Update" to Arctic Zephyr: From Ashes concludes the "General Availability" status of the Dormer - Jarvis (Kodi 16) line of From Ashes. The Dormer (3.x) line will transition to Long Term Support (LTS) status and receive only bugfixes. As of this release, the "Danvers" line (4.x) will enter "Preview Availability." You may continue using the Dormer - Jarvis line until you are ready to update to Kodi 17 Krypton.
+
+"About From Ashes" has been updated with new credits which were missing in the "Spring 2016 Update"
+Info Banner Code Has Been Completely Commented Out for Dormer and Danver Releases
+Rotten Tomatoes Has Been Added to the Video Information Screen
+Fixes to Broken Code Lines During 3rd Gen Color Enhancement Implementation
+Danvers ONLY: Adds "DialogConfirm.xml"
+New Textures Have Been Added
+Unused Textures Have Been Removed
+4th Generation Color Enhancer Has Been Added
+Ability to change Dialog Menu Background
+Ability to change Dialog Menu Text
+Ability to change Dialog Disabled Text
+Ability to change Dialog Buttons Highlight
+Ability to change Hubs Menu Highlight
+Ability to change Hubs Text Color Highlight
+Ability to change Hubs Widget Highlight Border
+Ability to change Hubs Widget Sublabel
+Ability to change Side Blade Menu Highlight Color
+Implemented new Busy Spinner into all applicable windows
+Fixed File Browser not displaying Folder and File Icons properly
+Changed "script.toolbox" to "script.skinhelper" for Backup and Restore in Skin Settings.
+Added new Color Themes Category in Skin Settings, With Ability to Create and Manage Custom Themes
+Added Ability to Select Day/Night Themes
+
+[B]3.2.12 (3.2.12_bsrelease01) - "From Ashes Spring 2016 Update Rollup Patch Level 2 (PL2)"[/B]
+JARVIS ONLY UPDATE
+Fixed Refresh Button
+Fixed False Debug Setting in "About From Ashes"
+
 [B]3.2.10 (3.2.11_bsrelease01) / 4.0.01 (4.0.01_bsrelease02) - "From Ashes Spring 2016 Update Rollup"[/B]
 Experimental Krypton Support ("Danvers" Build Line - Bluestone 2 - 4.0.01)
 Resolves Critical Issue with Textures
